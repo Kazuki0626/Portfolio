@@ -1,0 +1,190 @@
+
+/* TOP PAGE START */
+.top-page {
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 0;
+  overflow: hidden;
+}
+
+.top-page-content {
+  position: fixed;
+}
+
+.top-page-image {
+  max-width: 100%;
+  min-height: 100vh;
+}
+
+.top-page-image .top-page-image-img {
+  width: 1500px;
+  height: 790px;
+  object-fit: cover;
+  filter: brightness(85%);
+}
+
+.top-page-image-img{
+  animation: SlideIn 2.5s ;
+  animation-delay: 4.8s;
+  animation-fill-mode: backwards;
+}
+
+@keyframes SlideIn {
+  0% {
+    opacity: 0;
+    transform: translateY(64px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+.top-page-title {
+  position: fixed;
+  height: 100%;
+	width: 100%;
+  z-index: 9000;
+  
+}
+
+.top-page-title h1 {
+  transform: translate(-50%, -50%);
+  position: fixed;
+	top: 45%;
+  left: 52%;
+  font-size: 96px;
+  color: #F8ABA6;
+	display: none;
+	z-index: 9999;
+	width: 1000px;
+}
+
+.global-navigation {
+  position: fixed;
+  display: flex;
+  top: 8%;
+  left: 8%; 
+}
+
+
+.global-navigation-title-name {
+  animation: SlideIn 2.7s;
+  animation-delay: 7.0s;
+  animation-fill-mode: backwards;
+}
+
+.global-navigation-title .global-navigation-title-name {
+  font-size: 44px;
+  color: #F8ABA6;
+}
+
+.global-navigation-list {
+  position: fixed;
+  float: right;
+  display: flex;
+  top: 9%;
+  right: 7%;
+}
+
+.global-navigation-list-item {
+  padding-right: 30px;
+}
+
+.animation-hover {
+  color: #F8ABA6;
+  font-size: 24px;
+}
+
+.animation-hover:hover {
+  text-decoration: none;
+  color: white;
+}
+
+a {
+  position: relative;
+  display: inline-block;
+  transition: .3s;
+}
+a::after {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  content: '';
+  width: 0;
+  height: 1px;
+  background-color: white;
+  transition: .3s;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+a:hover::after {
+  width: 100%;
+}
+
+.animation-hover {
+  animation: SlideIn 2.7s;
+  animation-delay: 7.0s;
+  animation-fill-mode: backwards;
+}
+
+
+@keyframes SlideIn {
+  0% {
+    opacity: 0;
+    transform: translateY(64px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* TOP PAGE END */
+
+.secondary-page {
+  height: 1000px;
+  width: 100%;
+}
+
+.secondary-page-heading {
+  padding-top: 100px;
+  text-align: center;
+}
+
+.secondary-page-heading-title {
+  font-size: 84px;
+  color: #F8ABA6;
+}
+
+.secondary-page-concept {
+  padding-top: 30px;
+  text-align: center;
+  line-height: 1.8;
+  margin-bottom: 150px;
+}
+
+.secondary-page-concept-1 {
+  font-size: 28px;
+}
+
+.secondary-page-concept-2 {
+  font-size: 28px;
+}
+
+.secondary-page-concept-3 {
+  font-size: 28px;
+}
+
+.secondary-page-image {
+  max-width: 100%;
+}
+
+.secondary-page-image .secondary-page-image-img {
+  width: 1500px;
+  height: 800px;
+  object-fit: cover;
+  filter: brightness(110%);
+}
