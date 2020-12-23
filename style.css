@@ -1,32 +1,58 @@
-
 /* TOP PAGE START */
-.top-page {
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 0;
-  overflow: hidden;
-}
 
-.top-page-content {
-  position: fixed;
-}
-
-.top-page-image {
+.page-top-image {
   max-width: 100%;
   min-height: 100vh;
 }
 
-.top-page-image .top-page-image-img {
-  width: 1500px;
-  height: 790px;
+.page-top-image-img {
+  width: 1440px;
+  height: 800px;
   object-fit: cover;
-  filter: brightness(85%);
+  filter: brightness(88%);
+  animation: SlideIn 2.7s ;
+  animation-delay: 4.0s;
+  animation-fill-mode: backwards;
 }
 
-.top-page-image-img{
-  animation: SlideIn 2.5s ;
-  animation-delay: 4.8s;
+@keyframes SlideIn {
+  0% {
+    opacity: 0;
+    transform: translateY(64px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.page-top-title {
+  position: fixed;
+  top: 40%;
+  left: 18%;
+}
+
+.page-top-title h1 {
+  font-size: 96px;
+  color: #F8ABA6;
+}
+
+.site-header {
+  position: fixed;
+  top: 0;
+  z-index: 10000;
+  width: 100%;
+}
+
+.site-header .site-title {
+  position: fixed;
+  top: 2%;
+  left: 5%;
+  float: left;
+  padding: 50px;
+  color: white;
+  animation: SlideIn 2.7s;
+  animation-delay: 6.5s;
   animation-fill-mode: backwards;
 }
 
@@ -42,65 +68,46 @@
 }
 
 
-.top-page-title {
-  position: fixed;
-  height: 100%;
-	width: 100%;
-  z-index: 9000;
-  
-}
-
-.top-page-title h1 {
-  transform: translate(-50%, -50%);
-  position: fixed;
-	top: 45%;
-  left: 52%;
-  font-size: 96px;
-  color: #F8ABA6;
-	display: none;
-	z-index: 9999;
-	width: 1000px;
-}
-
-.global-navigation {
+#global-navigation {
   position: fixed;
   display: flex;
-  top: 8%;
-  left: 8%; 
+  top: 2%;
+  left: 45%;
 }
 
-
-.global-navigation-title-name {
-  animation: SlideIn 2.7s;
-  animation-delay: 7.0s;
-  animation-fill-mode: backwards;
-}
-
-.global-navigation-title .global-navigation-title-name {
-  font-size: 44px;
-  color: #F8ABA6;
-}
-
-.global-navigation-list {
-  position: fixed;
+.global-navigation-menu {
   float: right;
-  display: flex;
-  top: 9%;
-  right: 7%;
+  padding: 60px;
+  list-style: none;
 }
 
-.global-navigation-list-item {
+.global-navigation-menu-item {
+  font-size: 20px;
+  float: left;
   padding-right: 30px;
 }
 
-.animation-hover {
-  color: #F8ABA6;
-  font-size: 24px;
+.global-navigation-menu-item-list {
+  color: white;
+  animation: SlideIn 2.7s;
+  animation-delay: 6.5s;
+  animation-fill-mode: backwards;
 }
 
-.animation-hover:hover {
+@keyframes SlideIn {
+  0% {
+    opacity: 0;
+    transform: translateY(64px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.global-navigation-menu-item-list:hover {
+  color:  #F8ABA6;
   text-decoration: none;
-  color: white;
 }
 
 a {
@@ -108,83 +115,56 @@ a {
   display: inline-block;
   transition: .3s;
 }
+
 a::after {
   position: absolute;
   bottom: 0;
-  left: 50%;
+  left: 0;
   content: '';
   width: 0;
   height: 1px;
-  background-color: white;
+  background-color: #F8ABA6;
   transition: .3s;
-  -webkit-transform: translateX(-50%);
-  transform: translateX(-50%);
 }
 a:hover::after {
   width: 100%;
 }
 
-.animation-hover {
-  animation: SlideIn 2.7s;
-  animation-delay: 7.0s;
-  animation-fill-mode: backwards;
-}
-
-
-@keyframes SlideIn {
-  0% {
-    opacity: 0;
-    transform: translateY(64px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
 /* TOP PAGE END */
 
-.secondary-page {
+/* SECOND SECTION START */
+
+.second-section {
   height: 1000px;
   width: 100%;
 }
 
-.secondary-page-heading {
-  padding-top: 100px;
-  text-align: center;
-}
+.second-section-content { text-align: center; }
 
-.secondary-page-heading-title {
+.secomd-section-title { margin-bottom: 100px; }
+
+.second-section-main-title {
+  margin-top: 100px;
   font-size: 84px;
-  color: #F8ABA6;
+  color: #FBABA6;
 }
 
-.secondary-page-concept {
-  padding-top: 30px;
-  text-align: center;
-  line-height: 1.8;
+.second-section-sub-title {
+  line-height: 1.7;
   margin-bottom: 150px;
 }
 
-.secondary-page-concept-1 {
-  font-size: 28px;
-}
+.second-section-sub-title-list { font-size: 36px; }
 
-.secondary-page-concept-2 {
-  font-size: 28px;
-}
-
-.secondary-page-concept-3 {
-  font-size: 28px;
-}
-
-.secondary-page-image {
+.second-section-image {
   max-width: 100%;
+  min-height: 100vh;
 }
 
-.secondary-page-image .secondary-page-image-img {
-  width: 1500px;
-  height: 800px;
+.second-section-img {
+  width: 1440px;
+  height: 550px;
   object-fit: cover;
   filter: brightness(110%);
 }
+
