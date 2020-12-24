@@ -10,7 +10,6 @@ $(window).on('scroll',function(){
     startPos = winScrollTop;
 });
 
-
 $(function() {
 	setTimeout(function(){
 		$('.page-top-title h1').fadeOut(1800);

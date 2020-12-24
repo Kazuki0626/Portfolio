@@ -5,7 +5,7 @@
   min-height: 100vh;
 }
 
-.page-top-image-img {
+.page-top-image_layout {
   width: 1440px;
   height: 800px;
   object-fit: cover;
@@ -14,6 +14,7 @@
   animation-delay: 4.0s;
   animation-fill-mode: backwards;
 }
+
 
 @keyframes SlideIn {
   0% {
@@ -29,9 +30,8 @@
 .page-top-title {
   position: fixed;
   top: 40%;
-  left: 18%;
+  left: 18%; 
 }
-
 .page-top-title h1 {
   font-size: 96px;
   color: #F8ABA6;
@@ -135,13 +135,14 @@ a:hover::after {
 /* SECOND SECTION START */
 
 .second-section {
-  height: 1000px;
+  height: 1100px;
   width: 100%;
+  opacity: 0;
 }
 
 .second-section-content { text-align: center; }
 
-.secomd-section-title { margin-bottom: 100px; }
+.secomd-section-main { margin-bottom: 100px; }
 
 .second-section-main-title {
   margin-top: 100px;
@@ -165,6 +166,91 @@ a:hover::after {
   width: 1440px;
   height: 550px;
   object-fit: cover;
-  filter: brightness(110%);
+  filter: brightness(120%);
 }
 
+.view-section { margin-top: 125px; }
+
+.view-section-title { margin-left: 180px; }
+
+.view-section-title-name {
+  font-size: 56px;
+  color: #FBABA6;
+}
+
+.view-first-right { padding: 50px; }
+
+.view-first-left-img {
+  width: 550px;
+  height: 450px;
+  object-fit: cover;
+  margin-top: 75px;
+}
+
+.view-first-heading {
+  font-size: 56px;
+  color: #FBABA6;
+  margin-top: 75px;
+  
+}
+
+.first-description {
+  line-height: 1.5;
+  
+}
+
+.view-first-right-description { font-size: 32px; }
+
+.view-second-left-heading {
+  font-size: 56px;
+  color: #FBABA6;
+  margin-top: 75px; 
+}
+
+.view-second-left { padding: 50px; }
+
+.second-description { line-height: 1.5; }
+
+.view-second-left-description { font-size: 32px; }
+
+.view-second-right-img {
+  width: 550px;
+  height: 450px;
+  object-fit: cover;
+  margin-top: 75px;
+}
+
+.view-third-left-img {
+  width: 550px;
+  height: 450px;
+  object-fit: cover;
+  margin-top: 75px;
+}
+
+.view-third-right {
+  padding: 50px;
+}
+
+.view-third-right-heading { 
+  font-size: 56px; 
+  color: #FBABA6;
+  margin-top: 75px;
+}
+
+.third-description { line-height: 1.5; }
+
+.view-third-right-description {
+  font-size: 32px;
+}
+
+.view-third-sub {
+  text-align: center;
+  line-height: 1,5;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+.view-third-sub-title {
+  color: #FBABA6;
+  font-size: 36px;
+}
