@@ -181,14 +181,14 @@ h1, h2, h3, h4, h5, h6 {
 
 .global-navigation_menu_item a:hover::after {
   width: 100%;
-}
+} 
 
 /* TOP PAGE END */
 /* SECOND SECTION START */
 .second-section {
   height: 1100px;
   width: 100%;
-}
+} */
 
 .second-section_content {
   text-align: center;
