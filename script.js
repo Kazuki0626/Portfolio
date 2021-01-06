@@ -1,5 +1,9 @@
 // TOP PAGE START
 
+window.addEventListener("scroll", function () {
+  var header = document.querySelector("header");
+  header.classList.toggle("scroll-nav", window.scrollY > 0);
+});
 var startPos = 0,winScrollTop = 0;
 $(window).on('onload',function(){
     winScrollTop = $(this).scrollTop();
@@ -11,11 +15,11 @@ $(window).on('onload',function(){
     startPos = winScrollTop;
 
   });
-  
+
   $(function() {
     setTimeout(function(){
       $('.page-top-main_title').fadeOut(1800);
-    },2000); 
+    },2000);
   });
 
 

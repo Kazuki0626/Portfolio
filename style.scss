@@ -9,6 +9,82 @@ h1, h2, h3, h4, h5, h6 {
   padding: 0;
 }
 
+header {
+  background: black;
+
+  // headerを常時上に固定する
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  // スクロールしても他のコンテンツの下にならないようにする
+  z-index: 10;
+
+  // headerに余白を作る
+  padding: 30px 50px;
+
+  // ロゴとナビゲーションを横並びにする
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  // アニメーションの変化時間
+  transition: 0.5s;
+
+  // ロゴのデザイン
+  .logo {
+    color: white;
+    text-decoration: none;
+    font-size: 2rem;
+    // アニメーションの変化時間
+    transition: 0.5s;
+  }
+
+  // ナビゲーションの項目を横並びにする
+  ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    li {
+      list-style: none;
+
+      a {
+        text-decoration: none;
+        color: white;
+        margin: 0 15px;
+        // アニメーションの変化時間
+        transition: 0.5s;
+      }
+    }
+  }
+}
+
+// スクロールするためのsectionの装飾
+.section {
+  height: 100vh;
+
+  &.section-a {
+    background: black;
+  }
+
+  &.section-b {
+    background: white;
+  }
+}
+
+// スクロールして.scroll-navクラスがついたときのヘッダーデザイン
+header.scroll-nav {
+  padding: 10px 50px;
+  background: white;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+}
+
+// 背景が白に変化したのでロゴとナビゲーションの文字を黒にする
+header.scroll-nav .logo,
+header.scroll-nav ul li a {
+  color: black;
+}
 // 共通化
 
 
@@ -25,7 +101,7 @@ h1, h2, h3, h4, h5, h6 {
     animation: SlideIn 2.7s ;
     animation-delay: 4.0s;
     animation-fill-mode: backwards;
-  }  
+  }
 }
 
 
@@ -43,7 +119,7 @@ h1, h2, h3, h4, h5, h6 {
 .page-top-main {
   position: fixed;
   top: 40%;
-  left: 18%; 
+  left: 18%;
   &_title {
   font-size: 96px;
   color: #F8ABA6;
@@ -57,7 +133,6 @@ h1, h2, h3, h4, h5, h6 {
   z-index: 10000;
   width: 100%;
   &_title {
-    position: fixed;
     top: 1%;
     left: 5%;
     float: left;
@@ -90,7 +165,6 @@ h1, h2, h3, h4, h5, h6 {
   left: 45%;
   &_menu {
     float: right;
-    padding: 60px;
     list-style: none;
     &_item {
       font-size: 20px;
@@ -157,27 +231,27 @@ h1, h2, h3, h4, h5, h6 {
 
 .second-section {
   height: 1100px;
-  width: 100%; 
-  &_content { 
-    text-align: center;  
+  width: 100%;
+  &_content {
+    text-align: center;
   }
-}     
+}
 .second-section_sub_title {
   line-height: 1.7;
   margin-bottom: 200px;
-  &_list { 
+  &_list {
     font-size: 36px;
     font-family: 'Noto Serif TC', serif;
     letter-spacing: 2.5px;
   }
 }
-.second-section_main { 
+.second-section_main {
   margin-bottom: 75px;
   &_title {
     margin-top: 150px;
     font-size: 84px;
     color: #FBABA6;
-    font-family: 'Noto Serif TC', serif; 
+    font-family: 'Noto Serif TC', serif;
   }
 }
 
@@ -221,9 +295,9 @@ h1, h2, h3, h4, h5, h6 {
 
 /* VIEW SECTION START */
 
-.view-section { 
+.view-section {
   margin-top: 125px;
-  &_title { 
+  &_title {
     margin-left: 180px;
     &_name {
       font-size: 56px;
@@ -248,7 +322,7 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: bold;
   color: #ff0000;
   }
-  
+
   .view-section_fadeInDown {
   -webkit-animation-fill-mode:both;
   -ms-animation-fill-mode:both;
@@ -269,7 +343,7 @@ h1, h2, h3, h4, h5, h6 {
   100% { opacity: 1; -webkit-transform: translateY(0); -ms-transform: translateY(0); transform: translateY(0); }
   }
 
-.view-first_right { 
+.view-first_right {
   padding: 50px;
   &_heading {
     font-size: 56px;
@@ -281,7 +355,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .first-description { line-height: 1.5; }
 
-.view-first_right_description { 
+.view-first_right_description {
   font-size: 32px;
   font-family: 'Noto Serif TC', serif;
   letter-spacing: 2.0px;
@@ -294,18 +368,18 @@ h1, h2, h3, h4, h5, h6 {
   color: #ff0000;
   }
 
-.view-second_left { 
+.view-second_left {
   padding: 50px;
   &_heading {
     font-size: 56px;
     color: #FBABA6;
-    margin-top: 75px; 
+    margin-top: 75px;
     font-family: 'Merriweather', serif;
   }
 }
 
-.view-second_left_description { 
-  font-size: 32px; 
+.view-second_left_description {
+  font-size: 32px;
   font-family: 'Noto Serif TC', serif;
   letter-spacing: 2.0px;
 }
@@ -330,8 +404,8 @@ h1, h2, h3, h4, h5, h6 {
 
 .view-third_right {
   padding: 50px;
-  &_heading { 
-    font-size: 56px; 
+  &_heading {
+    font-size: 56px;
     color: #FBABA6;
     margin-top: 75px;
     font-family: 'Merriweather', serif;
@@ -456,7 +530,7 @@ h1, h2, h3, h4, h5, h6 {
     font-family: 'Noto Serif SC', serif;
     font-size: 36px;
     color: #FBABA6;
-    letter-spacing: 2.0px; 
+    letter-spacing: 2.0px;
   }
 }
 
@@ -787,12 +861,12 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
-.opening-section_table .table th { 
+.opening-section_table .table th {
   padding: 30px;
   font-size: 20px;
 }
 
-.opening-section_table .table td { 
+.opening-section_table .table td {
   padding: 30px;
   font-size: 20px;
 }
@@ -1029,7 +1103,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .map { margin-bottom: 100px; }
 
-.access-section_detail { 
+.access-section_detail {
   margin-bottom: 75px;
   text-align: center;
   &_heading {
