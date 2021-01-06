@@ -256,14 +256,14 @@ header.scroll-nav ul li a {
 
 .global-navigation_menu_item a:hover::after {
   width: 100%;
-}
+} 
 
 /* TOP PAGE END */
 /* SECOND SECTION START */
 .second-section {
   height: 1100px;
   width: 100%;
-}
+} */
 
 .second-section_content {
   text-align: center;
