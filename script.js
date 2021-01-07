@@ -22,6 +22,11 @@ $(window).on('onload',function(){
 
 // SECOND=SECTION START
 
+window.addEventListener("scroll", function () {
+  var header = document.querySelector("header");
+  header.classList.toggle("scroll-nav", window.scrollY > 0);
+});
+
 const secondText = 'second-section';
 
 $(`.${secondText}_main_title, .${secondText}_sub_title_list`).css('visibility','hidden');

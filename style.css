@@ -9,13 +9,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 header {
-  background: black;
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   z-index: 10;
-  padding: 30px 50px;
+  padding: 50px 50px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -35,6 +34,20 @@ header .logo {
   font-size: 2rem;
   -webkit-transition: 0.5s;
   transition: 0.5s;
+  -webkit-animation: SlideIn 5.5s;
+  animation: SlideIn 5.5s;
+  -webkit-animation-delay: 5.7s;
+  animation-delay: 5.7s;
+  -webkit-animation-fill-mode: backwards;
+  animation-fill-mode: backwards;
+  font-family: 'Noto Serif TC', serif;
+  font-size: 48px;
+  margin-left: 20px;
+}
+
+.logo:hover {
+  text-decoration: none;
+  color: #fbaba6;
 }
 
 header ul {
@@ -95,7 +108,7 @@ header.scroll-nav ul li a {
   width: 1440px;
   height: 800px;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   -webkit-filter: brightness(88%);
           filter: brightness(88%);
   -webkit-animation: SlideIn 2.7s;
@@ -198,15 +211,16 @@ header.scroll-nav ul li a {
   font-size: 20px;
   float: left;
   padding-right: 30px;
+  margin-top: 15px;
   font-family: 'Noto Serif TC', serif;
 }
 
 .global-navigation_menu_item_list {
   color: white;
-  -webkit-animation: SlideIn 2.7s;
-          animation: SlideIn 2.7s;
-  -webkit-animation-delay: 6.5s;
-          animation-delay: 6.5s;
+  -webkit-animation: SlideIn 3.5s;
+          animation: SlideIn 3.5s;
+  -webkit-animation-delay: 7.5s;
+          animation-delay: 7.5s;
   -webkit-animation-fill-mode: backwards;
           animation-fill-mode: backwards;
   font-family: 'Noto Serif TC', serif;
@@ -259,11 +273,16 @@ header.scroll-nav ul li a {
 } 
 
 /* TOP PAGE END */
+
 /* SECOND SECTION START */
 .second-section {
   height: 1100px;
   width: 100%;
-} */
+}
+
+.second-section_content {
+  text-align: center;
+}
 
 .second-section_content {
   text-align: center;
@@ -334,7 +353,7 @@ header.scroll-nav ul li a {
   width: 1440px;
   height: 550px;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   -webkit-filter: brightness(120%);
           filter: brightness(120%);
 }

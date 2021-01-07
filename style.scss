@@ -9,82 +9,7 @@ h1, h2, h3, h4, h5, h6 {
   padding: 0;
 }
 
-header {
-  background: black;
 
-  // headerを常時上に固定する
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  // スクロールしても他のコンテンツの下にならないようにする
-  z-index: 10;
-
-  // headerに余白を作る
-  padding: 30px 50px;
-
-  // ロゴとナビゲーションを横並びにする
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-
-  // アニメーションの変化時間
-  transition: 0.5s;
-
-  // ロゴのデザイン
-  .logo {
-    color: white;
-    text-decoration: none;
-    font-size: 2rem;
-    // アニメーションの変化時間
-    transition: 0.5s;
-  }
-
-  // ナビゲーションの項目を横並びにする
-  ul {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    li {
-      list-style: none;
-
-      a {
-        text-decoration: none;
-        color: white;
-        margin: 0 15px;
-        // アニメーションの変化時間
-        transition: 0.5s;
-      }
-    }
-  }
-}
-
-// スクロールするためのsectionの装飾
-.section {
-  height: 100vh;
-
-  &.section-a {
-    background: black;
-  }
-
-  &.section-b {
-    background: white;
-  }
-}
-
-// スクロールして.scroll-navクラスがついたときのヘッダーデザイン
-header.scroll-nav {
-  padding: 10px 50px;
-  background: white;
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
-}
-
-// 背景が白に変化したのでロゴとナビゲーションの文字を黒にする
-header.scroll-nav .logo,
-header.scroll-nav ul li a {
-  color: black;
-}
 // 共通化
 :font-color {
   --accent1-color: #FBABA6;
@@ -114,6 +39,56 @@ header.scroll-nav ul li a {
 }
 
 /* TOP PAGE START */
+
+header {
+
+  // headerを常時上に固定する
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  // スクロールしても他のコンテンツの下にならないようにする
+  z-index: 10;
+
+  // headerに余白を作る
+  padding: 30px 50px;
+
+  // ロゴとナビゲーションを横並びにする
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  // アニメーションの変化時間
+  transition: 0.5s;
+
+  // ロゴのデザイン
+  .logo {
+    color: white;
+    text-decoration: none;
+    font-size: 48px;
+    // アニメーションの変化時間
+    transition: 1.0s;
+  }
+
+  // ナビゲーションの項目を横並びにする
+  ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    li {
+      list-style: none;
+
+      a {
+        text-decoration: none;
+        color: white;
+        margin: 0 15px;
+        // アニメーションの変化時間
+        transition: 0.5s;
+      }
+    }
+  }
+}
 
 .page-top_image {
   max-width: 100%;
@@ -198,6 +173,7 @@ header.scroll-nav ul li a {
       padding-right: 30px;
       font-family: var(--font1);
       &_list {
+        margin-top: 15px;
         color: var(--accent2-color);
         animation: SlideIn 2.7s;
         animation-delay: 6.5s;
@@ -210,10 +186,6 @@ header.scroll-nav ul li a {
       }
     }
   }
-}
-
-.page-top_description {
-  padding-bottom: 100px;
 }
 
 @keyframes SlideIn {
@@ -258,10 +230,11 @@ header.scroll-nav ul li a {
 .second-section {
   height: 1100px;
   width: 100%;
-  &_content {
+  &_main {
     text-align: center;
   }
 }
+
 .second-section_sub_title {
   line-height: 1.7;
   margin-bottom: 200px;
