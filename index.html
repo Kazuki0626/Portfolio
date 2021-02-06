@@ -6,6 +6,10 @@
   <title>千光寺公園</title>
   <!-- CSS -->
   <link rel="stylesheet" href="style.css">
+  <!-- CSS responsive -->
+  <link rel="stylesheet" href="responsive.css">
+  <!-- meta viewport -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- Bootstrap -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
   <!-- Font Awesome -->
@@ -38,7 +42,7 @@
     <header class="site-header">
       <div class="site-header_logo">
         <a href="#" class="logo">
-          <i class="fas fa-tree fa-lg" style="margin-right: 8px;"></i>千光寺公園<i class="fas fa-tree fa-lg" style="margin-left: 8px;"></i>
+          千光寺公園
         </a>
       </div>
         <nav class="global-navigation">
@@ -65,8 +69,11 @@
             </li>
           </ul>
         </nav>
+        <header id="header"></header>
+        <div id="content" class="top">
+        <a href="#" id="topBtn">TOP</a>
+        </div>
       </header>
-
 
   <!-- TOP PAGE END -->
 
@@ -103,7 +110,7 @@
         VIEW
       </h1>
     </div>
-    <hr width="1100">
+    <hr>
     <div class="container">
       <div class="row">
         <div class="col-md-6">
@@ -165,19 +172,19 @@
           <div class="col-md-6">
             <div class="view-third_right">
               <h1 class="view-third_right_heading">
-                Cat Load<i class="fas fa-cat fa-lg" style="margin-left: 30px;"></i>
+                Cat Load
               </h1>
               <div class="third-description">
-                <span class="view-third_right_description"><br>
+                <span class="view-third_right_description text-justify"><br>
                   猫の町尾道では
                 </span>
-                <span class="view-third_right_description"><br>
+                <span class="view-third_right_description text-justify"><br>
                   猫をモチーフにした
                 </span>
                 <span class="view-third_right_description"><br>
                   建物やCafeを
                 </span>
-                <span class="view-third_right_description"><br>
+                <span class="view-third_right_description text-justify"><br>
                   お楽しみいただけます
                 </span>
               </div>
@@ -205,7 +212,7 @@
       Experience
     </h1>
   </div>
-  <hr width="1100">
+  <hr>
   <div class="experience-section_sub">
     <h3 class="experience-section_sub_title">
       In Senkoji Park three experience can enjoy!
@@ -223,7 +230,7 @@
           <h1 class="experience-first_right_heading">
             歴史を感じる
           </h1>
-          <p>千光寺公園には古き良き風情が数多く残っています。国宝に指定されている寺社も多く点在し、志賀直哉や林芙美子などの有名な小説家のゆかりの地でもあり、尾道の風情と歴史に触れながら観光を楽しむことができます。尾道駅前には林芙美子像が立っており、観光スポットとしても人気です！</p>
+          <p class="text-justify">千光寺公園には古き良き風情が数多く残っています。国宝に指定されている寺社も多く点在し、志賀直哉や林芙美子などの有名な小説家のゆかりの地でもあり、尾道の風情と歴史に触れながら観光を楽しむことができます。尾道駅前には林芙美子像が立っており、観光スポットとしても人気です！</p>
         </div>
       </div>
       <div class="col-md-6">
@@ -236,7 +243,7 @@
           <h1 class="experience-second_right_heading">
             猫に触れる
           </h1>
-          <p>千光寺公園は猫の多さでも有名となっており、観光客を出迎え癒してくれる千光寺公園の看板的存在です！種々多様な猫がおり、自分好みの猫を見つけることもできます。猫をモチーフにした猫Cafeや猫の細道という観光地も多く点在し、尾道のおすすめの観光スポットとなっています！</p>
+          <p class="text-justify">千光寺公園は猫の多さでも有名となっており、観光客を出迎え癒してくれる千光寺公園の看板的存在です！種々多様な猫がおり、自分好みの猫を見つけることもできます。猫をモチーフにした猫Cafeや猫の細道という観光地も多く点在し、尾道のおすすめの観光スポットとなっています！</p>
         </div>
       </div>
       <div class="col-md-6">
@@ -249,7 +256,7 @@
           <h1 class="experience-third_right_heading">
             自然に触れる
           </h1>
-          <p>春になると多くの観光客を引き寄せるのが千光寺公園の桜！広島県桜名所ランキング第２位にも選ばれており、尾道水道をバックにシャッターを切る人は跡を立ちません。また、夜になると期間限定で桜がライトアップされ、見る人を魅了します</p>
+          <p class="text-justify">春になると多くの観光客を引き寄せるのが千光寺公園の桜！広島県桜名所ランキング第２位にも選ばれており、尾道水道をバックにシャッターを切る人は跡を立ちません。また、夜になると期間限定で桜がライトアップされ、見る人を魅了します</p>
         </div>
       </div>
     </div>
@@ -267,7 +274,7 @@
       ENJOYMENT
     </h1>
   </div>
-  <hr width="1100">
+  <hr class="enjoyment-hr">
   <div class="enjoyment-section_sub">
     <h3 class="enjoyment-section_sub_title">
       Introduce four places everyone can enjoy!
@@ -279,9 +286,9 @@
         <div class="enjoyment-section_first_left">
           <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
             <ol class="carousel-indicators">
-              <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-              <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-              <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+              <li data-target="#carouselExampleIndicators_1" data-slide-to="0" class="active"></li>
+              <li data-target="#carouselExampleIndicators_1" data-slide-to="1"></li>
+              <li data-target="#carouselExampleIndicators_1" data-slide-to="2"></li>
             </ol>
             <div class="carousel-inner">
               <div class="carousel-item active">
@@ -327,11 +334,11 @@
         </div>
         <div class="col-md-6">
           <div class="enjoyment-section_second_right">
-            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <div id="carouselExampleIndicators" class="carousel slide_2" data-ride="carousel">
               <ol class="carousel-indicators">
-                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                <li data-target="#carouselExampleIndicators_2" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators_2" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators_2" data-slide-to="2"></li>
               </ol>
               <div class="carousel-inner">
                 <div class="carousel-item active">
@@ -349,7 +356,7 @@
                 <span class="sr-only">前へ</span>
               </a>
               <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="carousel-control-next-icon_2" aria-hidden="true"></span>
                 <span class="sr-only">次へ</span>
               </a>
             </div>
@@ -357,11 +364,11 @@
         </div>
         <div class="col-md-6">
           <div class="enjoyment-section_third_left">
-            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <div id="carouselExampleIndicators" class="carousel slide_3" data-ride="carousel">
               <ol class="carousel-indicators">
-                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                <li data-target="#carouselExampleIndicators_3" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators_3" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators_3" data-slide-to="2"></li>
               </ol>
               <div class="carousel-inner">
                 <div class="carousel-item active">
@@ -409,9 +416,9 @@
           <div class="enjoyment-section_fourth_right">
             <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
               <ol class="carousel-indicators">
-                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                <li data-target="#carouselExampleIndicators_4" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators_4" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators_4" data-slide-to="2"></li>
               </ol>
               <div class="carousel-inner">
                 <div class="carousel-item active">
@@ -449,7 +456,7 @@
         Photo Gallery
       </h1>
     </div>
-    <hr width="1100">
+    <hr>
     <div class="picture-section_sub">
       <h3 class="picture-section_sub_title">
         Introduce a lot of Beautiful places!
@@ -594,7 +601,7 @@
         INFORMATION
       </h1>
     </div>
-    <hr width="1100">
+    <hr>
     <div class="information-section_sub">
       <h3 class="information-section_sub_title">
         New news will be post!
@@ -648,7 +655,7 @@
         OPENING HOURS
       </h1>
     </div>
-    <hr width="1100">
+    <hr>
     <div class="opening-section_sub">
       <h3 class="opening-section_sub_title">
         Opening Hours ~ Closing Hours
@@ -691,7 +698,7 @@
         Around Spot
       </h1>
     </div>
-    <hr width="1100">
+    <hr>
     <div class="spot-section_sub">
       <h3 class="spot-section_sub_title">
         Introduce Four places everyone can enjoy !
@@ -719,8 +726,8 @@
           <p class="spot-section_first_description_content">
             尾道の新名所のU2!インスタ映えを狙うために若者が多く集まるU2にはおしゃれなランチや雑貨屋さんを楽しむことができ幅広い層に支持されています。また、宿泊施設や自転車の貸出も行っており、U2で借りた自転車を使ってしまなみ海道にサイクリングに行く観光客も多くみられます！
           </p>
+          <hr>
         </div>
-        <hr width="1100">
       </div>
     </div>
   </div>
@@ -748,8 +755,8 @@
           <p class="spot-section_second_description_content">
             2019年3月にリニューアルオープンした尾道駅！近代的なデザインに設計されており、駅舎の写真を撮る観光客はとても多いです！コンビニ、レストラン、宿泊施設もあり、魅力たっぷりです。尾道駅周辺には尾道ラーメンのお店もたくさんあり、そちらもおすすめです！
           </p>
+          <hr>
         </div>
-        <hr width="1100">
       </div>
     </div>
   </div>
@@ -778,8 +785,8 @@
         <p class="spot-section_third_description_content">
           国宝に指定されている浄土寺には本堂だけでなくいろいろな魅力があります！浄土寺の山頂には展望台もあるため展望台から眺める尾道水道の景色も最高です！浄土寺では鳩の餌やり体験もすることができ多くの観光客が１袋５０円の餌を購入し、餌やりを楽しんでいます！
         </p>
+        <hr>
       </div>
-      <hr width="1100">
     </div>
   </div>
 </div>
@@ -825,7 +832,7 @@
         ACCESS
       </h1>
     </div>
-    <hr width="1100">
+    <hr>
     <div class="access-section_sub">
       <h3 class="access-section_sub_title">
         Explain how to get to Senkoji Park !
@@ -849,7 +856,7 @@
         <section id="section12"></section>
         <section id="section13"></section>
         <h3 class="access-section_detail_description_2">
-          千光寺公園はJR尾道駅から程近いところにあります<br>最寄りの公共交通機関はJR尾道駅となっており<br>JR尾道駅からはタクシー、バス、レンタルサイクルを利用してお越しいただけます
+          千光寺公園はJR尾道駅から程近いところにあります。<br>最寄りの公共交通機関はJR尾道駅となっており。<br>JR尾道駅からはタクシー、バス、レンタルサイクルを利用してお越しいただけます。
         </h3>
       </div>
     </div>
