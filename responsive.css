@@ -130,6 +130,7 @@
   .experience-second_left_img {
     max-width: 100%;
   }
+  /* ここから重なり始める */
   .experience-second_right {
     text-align: center;
   }
