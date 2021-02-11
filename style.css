@@ -97,7 +97,28 @@ body {
 
 /* Humberger Menu */
 
+.header{
+  background-color: #1B1310;
+  color: #fff;
+  height:74px;
+  padding: 0 120px;
+  border-bottom:1px solid #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav-list{
+  /* navの横並び */
+  display: flex;
+}
+.nav-item{
+  /* メニューの右側に余白 */
+  margin-right: 55px;
+}
 
+.burger-btn{
+display: none;
+}
 
 /* Humberger Menu */
 
