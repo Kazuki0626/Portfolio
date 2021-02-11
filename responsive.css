@@ -2,10 +2,11 @@
 
   /*  Mobile header  */
 
-  .header{
-    padding: 0 5%;
+  .page-top .header{
+  padding: 0 90%;
+    
 }
-.burger-btn{
+.page-top .burger-btn{
     display: block;
     width: 39px;
     height: 39px;
@@ -15,7 +16,7 @@
   background-color:transparent;
   border:none;
   }
-  .bar{
+  .page-top .bar{
     width: 20px;
     height: 1px;
     display: block;
@@ -24,29 +25,29 @@
     transform: translateX(-50%);
     background-color: #fff;
   }
-  .bar_top{
+  .page-top .bar_top{
     top: 10px;
   }
-  .bar_mid{
+  .page-top .bar_mid{
     top: 50%;
     transform: translate(-50%,-50%);
   }
-  .bar_bottom{
+  .page-top .bar_bottom{
     bottom: 10px;
   }
-  .burger-btn.close .bar_top{
+  .page-top .burger-btn.close .bar_top{
     transform: translate(-50%,10px) rotate(45deg);
     transition: transform .3s;
   }
-  .burger-btn.close .bar_mid{
+  .page-top .burger-btn.close .bar_mid{
     opacity: 0;
     transition: opacity .3s;
   }
-  .burger-btn.close .bar_bottom{
+  .page-top  .burger-btn.close .bar_bottom{
     transform: translate(-50%,-8px) rotate(-45deg);
     transition: transform .3s;
   }
-  .nav-wrapper{
+  .page-top .nav-wrapper{
     display: none;
     width: 100vw;
     height: 100vh;
@@ -55,13 +56,13 @@
     left: 0;
     z-index: 2;/*キービジュアルと.btn_triggerとの重なりの前後関係を調整*/
    }
-   .header-nav{
+   .page-top  .header-nav{
       width: 100%;
       height: 100%;
       background-color:#1B1310;
       z-index: 2;
     }
-   .header-nav .nav-list{
+    .page-top .header-nav .nav-list{
       display: block;
       position: absolute;
       top: 50%;
@@ -69,7 +70,7 @@
       transform: translate(-50%,-50%);
       text-align: center;
     }
-    .header-nav .nav-item{
+    .page-top  .header-nav .nav-item{
       margin-right: 0;
       margin-bottom: 40px;
     }
@@ -78,7 +79,7 @@
 /* ------------------ */
 /* fv
 /* ------------------ */
-.fv{
+.page-top .fv{
   height:90vh;
   background-color:#141414;
   background-image: url(../img/fv-bgi@2x.jpg);
@@ -92,6 +93,11 @@
 }
 
 /* Mobile Header */
+
+.site-header .site-logo {
+  font-size: 32px;
+  display: none;
+}
 
 .gnav-menu_item {
   display: none;
