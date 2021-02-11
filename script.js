@@ -1,24 +1,43 @@
 'use strict'
 
+// header fixed
+
+
+
+// header fixed
+
 // TOP PAGE START
 
-const topText = 'page-top-main';
+//   $(document).ready(function () {
+//     $("#topBtn").hide();　//ボタンを非表示にする
+//     $(window).on("scroll", function () {
+//         if ($(this).scrollTop() > 785) { //ページの上から100pxスクロールした時
+//             $("#topBtn").fadeIn("fast"); //ボタンがフェードインする
+//         } else {
+//             $("#topBtn").fadeOut("fast");　//ボタンがフェードアウトする
+//         }
+//         scrollHeight = $(document).height(); //ドキュメントの高さ 
+//         scrollPosition = $(window).height() + $(window).scrollTop(); //現在地 
+//         footHeight = $("footer").innerHeight(); //止めたい位置の高さ(今回はfooter)
+//         if (scrollHeight - scrollPosition <= footHeight) { //ドキュメントの高さと現在地の差がfooterの高さ以下の時
+//             $("#topBtn").css({
+//                 "position": "absolute", //pisitionをabsoluteに変更
+//             });
+//         } else { //それ以外の場合は
+//             $("#topBtn").css({
+//                 "position": "fixed", //固定表示
+//             });
+//         }
+//     });
 
-var startPos = 0,winScrollTop = 0;
-$(window).on('onload',function(){
-    winScrollTop = $(this).scrollTop();
-    if (winScrollTop >= 500) {
-        $(`.${topText}`).addClass('hide');
-    } else {
-        $(`.${topText}`).removeClass('hide');
-    }
-    startPos = winScrollTop;
-  });
-  $(function() {
-    setTimeout(function(){
-      $(`.${topText}_title`).fadeOut(1800);
-    },2000);
-  });// TOP PAGE END
+// //スムーススクロール設定
+//     $('#topBtn').click(function () {
+//         $('body,html').animate({
+//             scrollTop: 0
+//         }, 800);//スムーススクロールの速度
+//         return false;
+//     });
+// });// TOP PAGE END
 
 // SECOND=SECTION START
 
