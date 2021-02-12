@@ -1,53 +1,73 @@
 @media screen and (max-width: 430px) {
 
-  /*  Mobile header  */
+  /* PC Header */
 
-  .page-top .header{
-  padding: 0 90%;
-    
+  .main-header {
+    display: none;
+  }
+
+  .page-top {
+    display: block;
+  }
+  .page-top_image {
+    display: block;
+  }
+
+  /* PC Header */
+
+  /*  Mobile header  */
+  
+
+  .header{
+    padding: 0 5%;
+    background-color: #EFF4F4;
 }
-.page-top .burger-btn{
+
+.header .site-title {
+  color: #554b4b;
+}
+.burger-btn{
     display: block;
     width: 39px;
     height: 39px;
     position: relative;
-    z-index: 5;
+    z-index: 3;
 /*   codepenの挙動のため */
   background-color:transparent;
   border:none;
   }
-  .page-top .bar{
+  .bar{
     width: 20px;
     height: 1px;
     display: block;
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    background-color: #fff;
+    background-color: #554b4b;
   }
-  .page-top .bar_top{
+  .bar_top{
     top: 10px;
   }
-  .page-top .bar_mid{
+  .bar_mid{
     top: 50%;
     transform: translate(-50%,-50%);
   }
-  .page-top .bar_bottom{
+  .bar_bottom{
     bottom: 10px;
   }
-  .page-top .burger-btn.close .bar_top{
+  .burger-btn.close .bar_top{
     transform: translate(-50%,10px) rotate(45deg);
     transition: transform .3s;
   }
-  .page-top .burger-btn.close .bar_mid{
+  .burger-btn.close .bar_mid{
     opacity: 0;
     transition: opacity .3s;
   }
-  .page-top  .burger-btn.close .bar_bottom{
+  .burger-btn.close .bar_bottom{
     transform: translate(-50%,-8px) rotate(-45deg);
     transition: transform .3s;
   }
-  .page-top .nav-wrapper{
+  .nav-wrapper{
     display: none;
     width: 100vw;
     height: 100vh;
@@ -56,97 +76,71 @@
     left: 0;
     z-index: 2;/*キービジュアルと.btn_triggerとの重なりの前後関係を調整*/
    }
-   .page-top  .header-nav{
+   .header-nav{
       width: 100%;
       height: 100%;
-      background-color:#1B1310;
+      background-color: #EFF4F4;
       z-index: 2;
     }
-    .page-top .header-nav .nav-list{
+   .header-nav .nav-list{
       display: block;
       position: absolute;
       top: 50%;
-      left: 50%;
+      left: 45%;
       transform: translate(-50%,-50%);
       text-align: center;
+      list-style: none;
     }
-    .page-top  .header-nav .nav-item{
+    .header-nav .nav-item{
       margin-right: 0;
       margin-bottom: 40px;
     }
 
+    .header-nav .nav-item a {
+      color: #554b4b;
+    }
 
-/* ------------------ */
-/* fv
-/* ------------------ */
-.page-top .fv{
-  height:90vh;
-  background-color:#141414;
-  background-image: url(../img/fv-bgi@2x.jpg);
-  background-position: center;
-  background-size: cover;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+    .page-top_image {
+      max-width: 100%;
+      min-height: 100vh;
+    }
 
+    .page-top_image_img {
+      width: 100%;
+      height: 800px;
+      object-fit: cover;
+    }
+  
+
+/* */
+
+.second-section {
+  height: 1100px;
 }
 
-/* Mobile Header */
-
-.site-header .site-logo {
-  font-size: 32px;
-  display: none;
+.second-section_main {
+  margin-bottom: 30px;
 }
 
-.gnav-menu_item {
-  display: none;
+.second-section_main_title {
+  font-size: 72px;
 }
-
-  .page-top_image {
-    max-width: 100%;
-  }
-
-  .page-top_image_layout {
-    max-width: 100%;
-    object-fit: cover;
-  }
-
-  .page-top-main {
-    top: 45%;
-    left: 5%;
-  }
-
-  .page-top-main_title {
-    font-size: 32px;
-  }
-
-  .second-section_main_title {
-    font-size: 48px;
-  }
-
-  .site-header .site-header_logo .logo {
-    padding: 0;
-    font-size: 32px;
-  }
-
-  .site-header {
-    padding: 30px;
-    margin: 0px;
-  }
 
   .second-section_sub_title_list {
     font-size: 24px;
+    margin-bottom: 50px;
   }
   .second-section_image {
     max-width: 100%;
   }
   .second-section_image_img {
     max-width: 100%;
+    height: 400px;
     object-fit: cover;
   }
   .view-section {
     margin-top: 30px;
+
   }
   .view-section_title {
     margin-left: 20px;
@@ -281,7 +275,7 @@
     font-size: 24px;
   }
   .enjoyment-section {
-    height: 5000px;
+    height: 5150px;
   }
   .enjoyment-section_main {
     margin-left: 20px;
