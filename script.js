@@ -2,22 +2,27 @@
 
 // header fixed
 
-$('.burger-btn').on('click',function(){//.btn_triggerをクリックすると
-  $('.burger-btn').toggleClass('close');//.btn_triggerにcloseクラスを付与(ボタンのアニメーション)
-  $('.nav-wrapper').fadeToggle(500);//.nav-wrapperが0.5秒でフェードイン(メニューのフェードイン)
-  $('body').toggleClass('noscroll');//bodyにnoscrollクラスを付与(スクロールを固定)
+$('.burger-btn').on('click',function(){
+  $('.burger-btn').toggleClass('close');
+  $('.nav-wrapper').fadeToggle(500);
+  $('body').toggleClass('noscroll');
  });
 
 // header fixed
+
+
 
 // header change-color PC 
 
 window.addEventListener("scroll", function () {
   var header = document.querySelector(".site-header");
-  header.classList.toggle("scroll-nav", window.scrollY > 0);
+  header.classList.toggle("scroll-nav", window.scrollY > 100);
 });
 
+
 // header change-color PC
+
+
 
 // TOP PAGE START
 
